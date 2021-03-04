@@ -1,0 +1,298 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtube</title>
+  <link rel=”icon” type=”image/ico” href="yt_title.png" />
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <a href="#">
+      <img src="./icons/youtubeicon.png" alt="YouTube Logo" class="youtube-logo" />
+    </a>
+     <!-- <div class="col-5 searchbox">
+      <div class="input-group mb-3"> 
+          <input type="text" class="form-control" placeholder="Search video here...." aria-label="Search video here" aria-describedby="basic-addon2" onclick = "search()" >
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button" style="width:100px;background-color:grey;color:black">Search</button>
+          </div>
+        </div> -->
+   <!-- </div> --> 
+    <form class="search-bar">
+      <input class="search-input" type="search" placeholder="Search" aria-label="Search" />
+     <button type="submit" class="search-btn">
+       <!-- <img src="icons/magnifier.png" width="70px " height="20px" /> -->
+      SEARCH
+      </button>
+    </form>
+    
+    <div class="menu-icons">
+      <a href="#">
+        <img src="./icons/videobutton.png" alt="Upload Video" />
+      </a>
+      <a href="#">
+        <img src="./icons/moreview.png" alt="Apps" />
+      </a>
+      <a href="#">
+        <img src="./icons/bell.png" alt="Notifications" />
+      </a>
+      <a href="#">
+        <img class="menu-channel-icon" src="./icons/you tube profile.jpg" alt="Your Channel" />
+      </a>
+    </div>
+  </header>
+
+  <!-- <div class="col sm-5">
+    <div class="dropdown">
+      <button class="dropbtn" aria-placeholder="search here" style="border: 1px solid black; width:200px;"  >search here....</button>
+      <div class="dropdown-content">
+        <p onclick="black_swan()">Teri Ankho me | Darshan Raval | aishwarya | Rashmi Virag |Radhika Rao| Vinay Sapru | Siddharth</p>
+        <p onclick="dna()">Asal me | Dhvani Bhanushali | madhusudan | Rashmi Virag |Radhika Rao| Vinay Sapru | Siddharth</p>
+      </div>
+    </div> -->
+
+  <div class="container" id="contain">
+    <div class="row" style="display: inline-flex; ">
+      <div class="col-10">
+        <video id="vedio" poster="./songsimg/boywithluv.jpg" style='width:90%; height:"400px"'  controls="controls" class="img-fluid">
+          <source src="./videoBoywithluv.mp4" type="video/mp4" aria-controls="full" >
+        </video>
+        <p id="vedio_heading">
+          <b> BTS (방탄소년단) '작은 것들을 위한 시 (Boy With Luv) (feat. Halsey)' Official MV</b><br>
+        <div id = "view_svg">
+          <p id="views">1,154,974,621 views•Apr 12, 2019 </p>
+
+         
+     
+         <div class="like">
+          <p>
+            <!-- <img src="./SVGS/like.svg" alt="like" /> -->
+             <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+              style="pointer-events: none; display: block; width: 30px; height: 30px;">
+             <g class="style-scope yt-icon">
+                <path
+                  d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-1.91l-.01-.01L23 10z"
+                  class="style-scope yt-icon"></path>
+              </g>
+            </svg>
+            <span>18M</span>
+          </p>     
+          <p>
+            <!-- <img src="unlike.svg" alt="unlike" /> -->
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+              style="pointer-events: none; display: block; width: 30px; height: 30px;">
+              <g class="style-scope yt-icon">
+                <path
+                  d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v1.91l.01.01L1 14c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"
+                  class="style-scope yt-icon"></path>
+              </g>
+            </svg>
+            <span>948K</span>
+
+          </p>
+          <p>
+            <!-- <img src="forword.svg" alt="forword" /> -->
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+              style="pointer-events: none; display: block; width: 30px; height: 30px;">
+              <g mirror-in-rtl="" class="style-scope yt-icon">
+                <path d="M14 9V3L22 12L14 21V15C8.44 15 4.78 17.03 2 21C3.11 15.33 6.22 10.13 14 9Z"
+                  class="style-scope yt-icon"></path>
+              </g>
+            </svg>
+            <span>share</span>
+          </p>
+          <p id="save">
+            <!-- <img src="save.svg" alt="save" /> -->
+            <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false" class="style-scope yt-icon"
+              style="pointer-events: none; display: block; width: 30px; height: 30px;">
+              <g class="style-scope yt-icon">
+                <path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z"
+                  class="style-scope yt-icon"></path>
+              </g>
+            </svg>
+            <span>Save</span>
+          </p>
+        </div>
+      </div>
+        
+        <hr>
+        <div id="ved_info" style="display: flex;">
+          <img src="./icons/bighitET.png" id="t-logo">
+          <span ><b>Big Hit Label</b></span>
+        </div>
+        <button id="btn-subs" onclick="subscribe()">Subscribe</button>
+        <div style="padding-left: 50px; padding-top: 20px; padding-right: 30px;">
+          Credits:
+          Director : YongSeok Choi (Lumpens)
+          Assistant Director : WonJu Lee (Lumpens)
+          
+        
+          
+         
+        </div>
+        <hr>
+        6,361,524 Comments
+
+        <div>
+          <img src="./icons/you tube profile.jpg" class="menu-channel-icon">
+          Yashasvi <br>
+          Congrats BTS on your fifth Billboard 200 #1!
+        </div>
+        </div>
+      <hr>
+
+      <div class="col">
+        <div class="col-2" style="display: inline-flex; padding-left: 20px;">
+          <div class="col-2">
+            <img src="./songsimg/blackswan.jpg" id="left-icon" onclick="black_swan()">
+          </div>
+
+          <div class="col-2" style="height: auto; width: 200px;">
+            <b>BTS (방탄소년단) 'Black Swan' Official MV</b>
+            <br> Big Hit Labels </br>
+            <br>248,480,363 views•Mar 4, 2020 </br>
+            <!-- <div id="views">248,480,363 views•Mar 4, 2020 -->
+              <!-- <span class="uploaded">1 Year ago</span> -->
+            <!-- </div> -->
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="col-4" id="side-icons">
+            <div class="col-2">
+              <img src="./songsimg/lifegoeson.jpg" width="250px" height="150px" onclick="lifegoeson()">
+            </div>
+
+            <div class="col-2" style="height: auto; width: 200px;">
+              <p><b>BTS (방탄소년단) 'Life Goes On' Official MV</b></p>
+              <br> Big Hit Labels </br>
+              <div id="views">281,191,839 views
+                <!-- <span class="uploaded">1 Year ago</span> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="col-4" id="side-icons">
+              <div class="col-2">
+                <img src="./songsimg/dynamite.jpg" width="250px" height="150px" onclick="dynamite()">
+              </div>
+
+              <div class="col-2" style="height: auto; width: 200px;">
+                <p><b>BTS (방탄소년단) 'Dynamite' Official MV</b></p>
+                <div id="views">888,249,904 views
+                  <span class="uploaded">6 Months ago</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="col-4" id="side-icons">
+                <div class="col-2">
+                  <img src="./songsimg/Anpanman.jpg" width="250px" height="150px" onclick="anpanman()" class="img-fluid">
+                </div>
+
+                <div class="col-2" style="height: auto; width: 200px;">
+                  <p><b>BTS (방탄소년단) 'Anpanman' @ TODAY Citi Music Series</b></p>
+                  <div id="views">36,905,281 views
+                    <span class="uploaded">5 Months ago</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4" id="side-icons">
+                <div class="col-2">
+                  <img src="./songsimg/dna.jpg" width="250px" height="150px" onclick="dna()">
+                </div>
+
+                <div class="col-2" style="height: auto; width: 200px;">
+                  <p><b>BTS (방탄소년단) 'DNA' Official MV</b></p>
+                  <div id="views">1,216,981,790 views
+                    <span class="uploaded">3 Year ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+<script>
+
+  // var request = new XMLHttpRequest();
+  // request.open('GET', 'https://ghibliapi.herokuapp.com/films', 'true')
+  // request.onload = function () {
+  //   var data = JSON.parse(this.response)
+  //   data.forEach((moive) => {
+  //     date = moive.release_date;
+  //     // document.write(moive.release_date)
+  //     document.createElement("p").innerHTML = date;
+  //     document.getElementById("p") == 'none';
+  //   })
+
+  // }
+  // request.send()
+
+  // var count = 0 ;
+  // var request = new XMLHttpRequest();
+  // request.open('GET', 'https://ghibliapi.herokuapp.com/films', 'true')
+  // request.onload = function () {
+
+  //   var name = ["fname" , "sname" , "tname" , "fname"];
+  //   var comment = ["fcomm" , "scomm" , "tcomm" ,"fcomm"];
+  //   var data = JSON.parse(this.response);
+  //   for(var i = 0 ; i < name.length ; i++)
+  //   {
+  //     document.getElementById("name[i]").innerHTML = data[i].director;
+  //     document.getElementById("comment[i]").innerHTML = data[i].description;
+  //     count++;
+  //   }
+    
+  //   document.getElementById("numberOfComments").innerHTML = count;
+  // }
+  // request.send();
+
+
+  function black_swan() {
+    var name = "Black_swan : BTS (방탄소년단) 'Black Swan' Official MV"
+    document.getElementById("vedio").poster ="blackswan.jpg";
+    document.getElementById("vedio_heading").innerHTML = name
+  }
+
+  function dna() {
+    var name = "BTS (방탄소년단) 'DNA' Official MV"
+    document.getElementById("vedio").poster = "dna.jpg";
+    document.getElementById("vedio_heading").innerHTML = name
+  }
+
+  function lifegoeson() {
+    var name = " BTS (방탄소년단) 'Life Goes On' Official MV"
+    document.getElementById("vedio").poster = "lifegoeson.jpg";
+    document.getElementById("vedio_heading").innerHTML = name
+  }
+
+  function dynamite() {
+    var name = "BTS (방탄소년단) 'Dynamite' Official MV"
+    document.getElementById("vedio").poster = "dynamite.jpg";
+    document.getElementById("vedio_heading").innerHTML = name
+  }
+
+  function anpanman() {
+    var name = "BTS (방탄소년단) 'Anpanman' @ TODAY Citi Music Series"
+    document.getElementById("vedio").poster = "Anpanman.jpg";
+    document.getElementById("vedio_heading").innerHTML = name
+  }
+
+  function subscribe()
+  {
+      alert("You subscribed to this channel");
+  }
+
+</script>
+
+</html>
