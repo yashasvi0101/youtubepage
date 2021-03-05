@@ -144,8 +144,21 @@
           Congrats BTS on your fifth Billboard 200 #1!
         </div>
         </div>
-      <hr>
 
+        
+        <div id ="firstname" >
+        <div id="fcomment" style="font-size: 11px; font-weight: 650;">
+        </div>
+        
+  
+        
+      <div id="secondname">
+        <div id="scomment" style="font-size: 11px; font-weight: 650;">
+        </div>
+
+    
+
+        
       <div class="col">
         <div class="col-2" style="display: inline-flex; padding-left: 20px;">
           <div class="col-2">
@@ -224,74 +237,85 @@
 </body>
 <script>
 
-  // var request = new XMLHttpRequest();
-  // request.open('GET', 'https://ghibliapi.herokuapp.com/films', 'true')
-  // request.onload = function () {
-  //   var data = JSON.parse(this.response)
-  //   data.forEach((moive) => {
-  //     date = moive.release_date;
-  //     // document.write(moive.release_date)
-  //     document.createElement("p").innerHTML = date;
-  //     document.getElementById("p") == 'none';
-  //   })
+  
 
-  // }
-  // request.send()
-
-  // var count = 0 ;
-  // var request = new XMLHttpRequest();
-  // request.open('GET', 'https://ghibliapi.herokuapp.com/films', 'true')
-  // request.onload = function () {
-
-  //   var name = ["fname" , "sname" , "tname" , "fname"];
-  //   var comment = ["fcomm" , "scomm" , "tcomm" ,"fcomm"];
-  //   var data = JSON.parse(this.response);
-  //   for(var i = 0 ; i < name.length ; i++)
-  //   {
-  //     document.getElementById("name[i]").innerHTML = data[i].director;
-  //     document.getElementById("comment[i]").innerHTML = data[i].description;
-  //     count++;
-  //   }
-    
-  //   document.getElementById("numberOfComments").innerHTML = count;
-  // }
-  // request.send();
+  
 
 
   function black_swan() {
     var name = "Black_swan : BTS (방탄소년단) 'Black Swan' Official MV"
-    document.getElementById("vedio").poster ="blackswan.jpg";
+    document.getElementById("vedio").poster ="./songsimg/blackswan.jpg";
     document.getElementById("vedio_heading").innerHTML = name
   }
 
   function dna() {
     var name = "BTS (방탄소년단) 'DNA' Official MV"
-    document.getElementById("vedio").poster = "dna.jpg";
+    document.getElementById("vedio").poster="./songsimg/dna.jpg";
     document.getElementById("vedio_heading").innerHTML = name
   }
 
   function lifegoeson() {
     var name = " BTS (방탄소년단) 'Life Goes On' Official MV"
-    document.getElementById("vedio").poster = "lifegoeson.jpg";
+    document.getElementById("vedio").poster = "./songsimg/lifegoeson.jpg";
     document.getElementById("vedio_heading").innerHTML = name
   }
 
   function dynamite() {
     var name = "BTS (방탄소년단) 'Dynamite' Official MV"
-    document.getElementById("vedio").poster = "dynamite.jpg";
+    document.getElementById("vedio").poster = "./songsimg/dynamite.jpg";
     document.getElementById("vedio_heading").innerHTML = name
   }
 
   function anpanman() {
     var name = "BTS (방탄소년단) 'Anpanman' @ TODAY Citi Music Series"
-    document.getElementById("vedio").poster = "Anpanman.jpg";
+    document.getElementById("vedio").poster = "./songsimg/Anpanman.jpg";
     document.getElementById("vedio_heading").innerHTML = name
   }
 
   function subscribe()
   {
       alert("You subscribed to this channel");
+      document.getElementById("btn-subs").innerHTML = "SUBSCRIBED"
   }
+
+  var count = 0 ;
+  var request = new XMLHttpRequest();
+  request.open('GET', 'https://ghibliapi.herokuapp.com/films', 'true')
+  request.onload = function () {
+
+    var name = ["firstname" , "secondname" ];
+    var comment = ["fcomment" , "scomment" ];
+    var data = JSON.parse(this.response);
+    for(var i = 0 ; i < name.length ; i++)
+    {
+      document.getElementById("name[i]").innerHTML = data[i].director;
+      document.getElementById("comment[i]").innerHTML = data[i].description;
+      count++;
+    }
+    
+    
+  }
+  request.send();
+
+
+
+  // var count =0;
+  //           var request = new XMLHttpRequest();
+  //           request.open('GET','https://ghibliapi.herokuapp.com/films',true);
+  //           request.onload = function()
+  //                            {
+                                 
+  //                                var name=["firstpersonname","secondpersonname","thirdpersonname","fourthpersonname"];
+  //                                var comment =["firstcomment","secondcomment","thirdcomment","fourthcomment"]
+  //                                var data = JSON.parse(this.response);   // data will contain entire json data
+                               
+  //                               for(var i=0;i<name.length;i++)
+  //                               {
+  //                                   document.getElementById(name[i]).innerHTML = data[i].director;
+  //                                   document.getElementById(comment[i]).innerHTML = data[i].description;
+  //                               }
+  //                             } 
+  //                            request.send();
 
 </script>
 
